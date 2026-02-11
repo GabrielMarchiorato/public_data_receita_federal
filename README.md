@@ -54,6 +54,7 @@ public_data_receita_federal/
 ├── docker-compose.yaml
 ├── Dockerfile
 ├── entrypoint.sh
+├── Makefile
 ├── README.md
 ├── requirements.txt
 ```
