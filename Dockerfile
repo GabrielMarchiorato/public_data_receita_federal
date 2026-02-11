@@ -20,3 +20,9 @@ USER airflow
 
 COPY requirements.txt /requirements.txt
 RUN pip install --no-cache-dir -r /requirements.txt
+
+# Coloquei esse processo pois estava dando erro ao executar o airflow
+COPY --chown=airflow:root entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
