@@ -22,5 +22,8 @@ trigger-bronze:
 trigger-silver:
 	docker compose exec airflow airflow dags trigger silver_refined_delta
 
+trigger-gold:
+	docker compose exec airflow airflow dags trigger gold_business_view
+
 airflow-shell:
 	docker compose exec airflow bash
